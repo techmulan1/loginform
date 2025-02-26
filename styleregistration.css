@@ -1,0 +1,26 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+main {
+
+    background-color: #35a035;
+    height: 100vh;
+    padding: 20px;
+
+
+}
+
+/* Styling my centered section */
+
+.centeredsec{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 20px;
+    height: 93vh;
+    max-width: 10vh;
+}
