@@ -6,24 +6,34 @@ body {
 }
 
 main {
-    background: linear-gradient(to top, blue, skyblue);
+
+    background-color: #35a035;
     height: 100vh;
+    padding: 20px;
+
+
+}
+
+.fullsec {
+    /* background: linear-gradient(to top, blue, skyblue); */
     display: flex;
+    border-radius: 20px;
+    height: 90vh;
 
 }
 
 /* Styling the left side */
 
-.leftside {
+/* .leftside {
     display: flex;
     justify-content: center;
     width: 50%;
     margin: auto auto;
 }
 
-.leftside img{
+.leftside img {
     border-radius: 20px;
-}
+} */
 
 
 
@@ -39,7 +49,7 @@ main {
 
 .form {
     background-color: #fff;
-    box-shadow: 10px 10px 15px 12px #060655;
+    box-shadow: 10px 10px 5px 12px #060655;
     border-radius: 10vh;
     width: 100%;
     text-align: center;
@@ -57,30 +67,30 @@ main {
 
 }
 
-form, input{
+form,
+input {
     width: 100%;
-    padding: 20px;
 }
 
-input{
+input {
     background-color: #a2d8ad;
     border: none;
     border-radius: 10px;
     text-align: center;
-
-    
-}
-
-.forgottenpassword{
-    float: right;
-    border: 1px solid #000;
-    border-radius: 5px;
-}
-
-.login{
-    margin-top: 15vh;
     padding: 20px;
-    margin-left: 25vh;
+
+
+}
+
+.forgottenpassword {
+    float: right;
+    text-decoration: none;
+}
+
+.login {
+    margin-top: 5vh;
+    padding: 18px;
+    width: 80%;
     border: none;
     border-radius: 10px;
 }
@@ -97,8 +107,13 @@ input{
         display: none;
     }
 
-    .login{
+    .login {
         margin-top: 10vh;
+    }
+
+    .formtext h1 {
+        color: #4d4ddd;
+        font-size: 2rem;
     }
 
 }
