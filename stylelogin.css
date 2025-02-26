@@ -2,118 +2,121 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    width: 100%;
 }
+
 
 main {
-
-    background-color: #35a035;
-    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-
-
-}
-
-.fullsec {
-    /* background: linear-gradient(to top, blue, skyblue); */
-    display: flex;
-    border-radius: 20px;
-    height: 90vh;
+    background-color: #007bff;
 
 }
 
-/* Styling the left side */
-
-/* .leftside {
+.centered {
     display: flex;
     justify-content: center;
-    width: 50%;
-    margin: auto auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
 }
-
-.leftside img {
-    border-radius: 20px;
-} */
-
-
-
-
-/* Styling of the right side */
-
-.rightside {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-}
-
 
 .form {
+    width: 50%;
     background-color: #fff;
-    box-shadow: 10px 10px 5px 12px #060655;
-    border-radius: 10vh;
-    width: 100%;
-    text-align: center;
-}
-
-/* The styling of the texts on my login form */
-.formtext h1 {
-    color: #4d4ddd;
-    font-size: 3rem;
-}
-
-.formtext p {
-    color: #000;
-    font-size: 1.5rem;
-
-}
-
-form,
-input {
-    width: 100%;
-}
-
-input {
-    background-color: #a2d8ad;
-    border: none;
     border-radius: 10px;
-    text-align: center;
-    padding: 20px;
-
-
+    box-shadow: 10px 10px 15px rgba(96, 68, 68);
+    
 }
 
-.forgottenpassword {
-    float: right;
+.formtext {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form .login {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form .forgottenpassword {
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+.form small {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form small a {
+    color: #007bff;
     text-decoration: none;
 }
 
-.login {
-    margin-top: 5vh;
-    padding: 18px;
-    width: 80%;
-    border: none;
-    border-radius: 10px;
+.form small a:hover {
+    text-decoration: underline;
 }
 
 
-/* STYLING FOR RESPONSIVENESS */
+/* Media Queries for Responsiveness */
 
-/* For medium screens (tablets) */
-@media (min-width: 768px) and (max-width: 1023px) {}
-
-/* For small screens (mobile devices) */
-@media (max-width: 767px) {
-    .leftside {
-        display: none;
+@media (max-width: 768px) {
+    .form {
+        width: 90%;
+        padding: 15px;
     }
 
-    .login {
-        margin-top: 10vh;
+    .form input {
+        padding: 12px;
+        margin: 8px 0;
     }
 
-    .formtext h1 {
-        color: #4d4ddd;
-        font-size: 2rem;
+    .form .login {
+        padding: 12px;
     }
 
+    .centered {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .form input {
+        padding: 10px;
+    }
+
+    .form .login {
+        padding: 10px;
+    }
+
+    .centered {
+        padding: 10px;
+    }
 }
