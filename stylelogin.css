@@ -1,0 +1,103 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+main {
+    background: linear-gradient(to top, blue, skyblue);
+    height: 100vh;
+    display: flex;
+
+}
+
+/* Styling the left side */
+
+.leftside {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: auto auto;
+}
+
+.leftside img{
+    border-radius: 20px;
+}
+
+
+
+
+/* Styling of the right side */
+
+.rightside {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+
+.form {
+    background-color: #fff;
+    border-radius: 10vh;
+    width: 100%;
+    text-align: center;
+}
+
+/* The styling of the texts on my login form */
+.formtext h1 {
+    color: #4d4ddd;
+    font-size: 3rem;
+}
+
+.formtext p {
+    color: #000;
+    font-size: 1.5rem;
+
+}
+
+form, input{
+    width: 100%;
+    padding: 20px;
+}
+
+input{
+    background-color: #a2d8ad;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+
+    
+}
+
+.forgottenpassword{
+    float: right;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.login{
+    margin-top: 15vh;
+    padding: 20px;
+    margin-left: 25vh;
+    border: none;
+    border-radius: 10px;
+}
+
+
+/* STYLING FOR RESPONSIVENESS */
+
+/* For medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {}
+
+/* For small screens (mobile devices) */
+@media (max-width: 767px) {
+    .leftside {
+        display: none;
+    }
+
+    .login{
+        margin-top: 10vh;
+    }
+
+}
